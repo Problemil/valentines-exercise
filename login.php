@@ -1,8 +1,10 @@
-<?php
-?>
+<head>
 <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    
-<div id="loginDiv">
+</head>
+<?php
+?>    
+<body id="loginBody">
+    <div id="loginDiv">
     <h1>
     Please login to view the page 🤩
     </h1>
@@ -25,6 +27,6 @@
         </div>
         <input id="submit" type="submit" value="PRESS ME">
     </form>
-</div>
-
+    </div>
+</body>
 
