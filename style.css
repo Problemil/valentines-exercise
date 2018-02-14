@@ -55,16 +55,33 @@ a{
 }
 
 /* CSS FRÅN DANIEL */
+#loginBody{
+    background-color: red;
+}
 #loginDIv{
     text-align:center;
     background-color:lightgrey;
-    width:600px;
-    height:280px;
+    width:650px;
+    height:250px;
     margin:auto;
-    margin-top:80px;
+    margin-top:40px;
     padding-top:50px;
-    border:1px solid black;
-
+    border:14px solid rgb(95, 92, 92);
+    background-color: black;
+    color:rgb(189, 184, 184);
+    border-radius: 50%;
+}
+#notAMemberDiv{
+    text-align:center;
+    background-color:lightgrey;
+    width:300px;
+    height:120px;
+    margin:auto;
+    margin-top:20px;
+    border:14px solid rgb(95, 92, 92);
+    background-color: black;
+    color:red;
+    border-radius: 50%; 
 }
 .nameandinput{
     display:flex;
@@ -78,8 +95,10 @@ a{
 }
 input{
     border:1px solid black;
+    background-color: rgb(231, 230, 228);
 }
-#submit{
+#loginButton{
     width:150px;
-    margin-bottom:40px;
+    height:30px;
+    font-size: 14px;
 }
