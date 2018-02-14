@@ -1,26 +1,16 @@
-<head>
-<?php include "variabels.php";
-$pagetitle = "Login"; ?>
+<?php 
+    session_start();
+?>
 
 <head>
-<title>
-    <?php 
-        echo siteName;
-        if(isset($pagetitle)){
-            echo " - ".$pagetitle;
-
-        }
-    ?>
-</title>
 <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
-<?php
-?>    
+
 <body id="loginBody">
     <div id="loginDiv">
-        <h1>
-        Please login to view the page 🤩
-        </h1>
+    <h1>
+    Please login to view the page 🤩
+    </h1>
         <form action='index.php' METHOD='POST'>      
             <div class='nameandinput'>
                 <div class='name'>
