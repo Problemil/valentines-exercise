@@ -54,3 +54,26 @@ a{
     color:red;
 }
 
+/* CSS FRÅN DANIEL */
+#loginDIv{
+    text-align:center;
+    background-color:lightgrey;
+    width:400px;
+    height:180px;
+    margin:auto;
+    margin-top:80px;
+    padding-top:50px;
+}
+.nameandinput{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.name{
+    text-align:left;
+    width:80px;
+    margin-bottom:20px;
+}
+#submit{
+    width:150px;
+}
