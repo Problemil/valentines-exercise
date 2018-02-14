@@ -1,0 +1,42 @@
+body{
+    margin:0;
+}
+
+.header{
+    border:2px solid black;
+    width:100%;
+    height:80px;
+    display:flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    color:red;
+
+}
+
+.logo{
+    font-size: 40px;
+}
+
+.content{
+    background-color: red;
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+
+.startText{
+    width:600px;
+    padding-top:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer{
+    width:100%;
+    background-color: black;
+    height:80px;
+    color:red;
+}
+
