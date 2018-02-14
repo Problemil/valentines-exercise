@@ -2,7 +2,10 @@
 
 $users = array(
     array("daniel", 1234, "Daniel Stenå"),
-    array("joakim", 1234, "Joakim Edward")
+    array("joakim", 1234, "Joakim Edward"),
+    array("Emil", 1234, "Emil Wärdig Tsoukalas"),
+    array("Jesper ", 1234, "Jesper Krasse "),
+
 );
 $_SESSION["users"] = $users;
 
