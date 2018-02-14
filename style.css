@@ -58,11 +58,13 @@ a{
 #loginDIv{
     text-align:center;
     background-color:lightgrey;
-    width:400px;
-    height:180px;
+    width:600px;
+    height:280px;
     margin:auto;
     margin-top:80px;
     padding-top:50px;
+    border:1px solid black;
+
 }
 .nameandinput{
     display:flex;
@@ -74,6 +76,10 @@ a{
     width:80px;
     margin-bottom:20px;
 }
+input{
+    border:1px solid black;
+}
 #submit{
     width:150px;
+    margin-bottom:40px;
 }
