@@ -17,7 +17,6 @@ if(isset($_POST["username"])){
 for ($i = 0; $i < count($users); $i++){
     if($_SESSION["username"] == $users[$i][0] and $_SESSION["password"] == $users[$i][1]){
         $_SESSION["loggedin"] = true; 
-        die();
     }
 }
 if(!isset($_SESSION["loggedin"])){
