@@ -4,75 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
-    
-    <style>
-    .stats {
-        margin:auto;    
-        font-size: 20px;
-    }
-     </style>
+<?php
+
+?>
 </head>
 <body>
-
+<div class = "tabell"> 
     <?php
-    $product['Chokladask'] = "50";
-    $product['Nallebjörn'] = "75";
-    $product['Blombukett'] = "85";
-    $product['Surprise Gift'] = "120";
+  $produkter = array(
+    array("name" => "Chokladask", "pris" => "40kr", "details" => "4/10"),
+    array("name" => "Nallebjörn", "pris" => "60kr", "details" => "5/10"),
+    array("name" => "Blombukett", "pris" => "90kr", "details" => "7/10"),
+    array("name" => "Surprise Gift", "pris" => "130kr", "details" => "10/10"),
+    
+  );
+ ?>
 
-  
-    
- 
-    echo "<table border='4' class='stats' cellspacing='0'>
-    
-                <tr>
-                <td class='hed' colspan='8'>Här är våra produkter:</td>
-                  </tr>
-                <tr>
-            
-                <th>Produktnamn</th>
-                <th>Pris</th>
-                <th>Uppskattningsnivå</th>
-               
-    
-                </tr>";
-    
-                  echo "<tr>";
-                  echo "<td>" . "Chokladask" . "</td>";
-                  echo "<td>" . $product['Chokladask']   . "</td>";
-                  echo "<td>" . "4/10". "</td>";
-      
-    
-                  echo "</tr>";
-    
-                  echo "<tr>";
-                  echo "<td>" . "Nallebjörn" . "</td>";
-                  echo "<td>" .  $product['Nallebjörn']   . "</td>";
-                  echo "<td>" . "6/10" . "</td>";
-                
-    
-                  echo "</tr>";
-    
-                  echo "<tr>";
-                  echo "<td>" . "Blombukett" . "</td>";
-                  echo "<td>" . $product['Blombukett'] . "</td>";
-                  echo "<td>" . "7/10" . "</td>";
-       
-    
-                  echo "</tr>";
-                  
-                  echo "<tr>";
-                  echo "<td>" . "Surprise Gift" . "</td>";
-                  echo "<td>" . $product['Surprise Gift'] . "</td>";
-                  echo "<td>" . "10/10" . "</td>";
-       
-    
-                  echo "</tr>";
-    
-        echo "</table>";
-    
-    
+ <table border="1px;">
+ <th>Produktnamn</th> <th>Pris</th> <th> Uppskattningsnivå </th>
+ <?php
+  foreach($produkter as $a)
+  {
+
+    echo "<tr><td>".$a["name"]."</td><td>".$a["pris"]."</td> <td>".$a["details"]."</td></tr>";
+  }
+?>
+
+</table>
+
+</div>
+<?php 
+
 
     ?>
 
