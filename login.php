@@ -7,13 +7,6 @@
 </head>
 
 <body id="loginBody">
-<?php 
-
-    // print_r ($_SESSION["users"]); 
-    // echo $_SESSION["users"][$i][0];
-    // echo $_SESSION["users"][$i][1];
-?>
-
     <div id="loginDiv">
     <h1>
     Please login to view the page 🤩

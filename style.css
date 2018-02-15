@@ -52,10 +52,31 @@ a{
     background-color: black;
     height:80px;
     color:red;
+<<<<<<< HEAD
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produktContent{
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top:30px;
+}
+
+.produktDiv{
+    height:150px;
+    width:150px;
+    border:2px solid black;
+    margin-bottom:20px;
+=======
     position: fixed;
     right: 0;
     left: 0;
     bottom: 0;
+>>>>>>> 22e04acb1e3fec52fa47cb9dfd055af73a7be43e
 }
 
 /* CSS FRÅN DANIEL */
