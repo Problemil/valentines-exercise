@@ -5,10 +5,10 @@ session_start();
 include "data.php";
 
 #Här lägger jag användarna från arrayen $users(från data.php) i session.
-// if(!isset($_SESSION["users"])){
-// $_SESSION["users"] = $users;
+if(!isset($_SESSION["users"])){
+$_SESSION["users"] = $users;
 
-// }
+}
 
 #Här kollar jag om det finns nått i POST, om det gör det så läggs det i SESSION
 if(isset($_POST["username"])){
@@ -17,8 +17,8 @@ if(isset($_POST["username"])){
 }
 
 #For loop som sedan kollar informationen användaren skrivit in mot informationen i $users arrayen
-for ($i = 0; $i < count($users); $i++){
-    if($_SESSION["username"] == $users[$i][0] and $_SESSION["password"] == $users[$i][1]){
+for ($i = 0; $i < count($_SESSION["users"]); $i++){
+    if($_SESSION["username"] == $_SESSION["users"][$i][0] and $_SESSION["password"] == $_SESSION["users"][$i][1]){
         $_SESSION["fullname"] = $users[$i][2];
         echo "<script>alert('Hello ". $_SESSION["fullname"] ."!');</script>";
         $_SESSION["loggedin"] = true; 

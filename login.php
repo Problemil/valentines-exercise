@@ -9,8 +9,10 @@
 <body id="loginBody">
 <?php 
 
-// $_SESSION["loggedin"] = true;
-echo $_SESSION["loggedin"]; ?>
+    // print_r ($_SESSION["users"]); 
+    // echo $_SESSION["users"][$i][0];
+    // echo $_SESSION["users"][$i][1];
+?>
 
     <div id="loginDiv">
     <h1>
@@ -36,9 +38,9 @@ echo $_SESSION["loggedin"]; ?>
             <input id="submit" type="submit" value="PRESS ME">
         </form>
     </div>
-    <div id="notAMemberDiv">
+    <!-- <div id="notAMemberDiv">
         <h3>Not a member?</h3>
         <a href="signup.php"><button id="loginButton">SIGN UP HERE</button></a>
-    </div>
+    </div> -->
 </body>
 
