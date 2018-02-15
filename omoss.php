@@ -1,12 +1,17 @@
-<?php include 'header.php';
- $pagetitle = "Om oss";
+<?php 
+$pagetitle = "Om oss";
+include 'header.php';
 ?>
 <form action="omoss.php" method="GET">
     <input type="submit" name="pensionär" value="pensionär">
 </form>
 <a href="omoss.php"><button>standard</button></a>
 
-
+<style>
+body {
+  background-color: red;
+}
+</style>
 <?php
 
 $text = "
