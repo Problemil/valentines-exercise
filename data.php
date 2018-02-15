@@ -5,5 +5,4 @@ $users = array(
     array("joakim", 1234, "Joakim Edward"),
     array("emil", 1234, "Emil Wärdig Tsoukalas"),
     array("jesper", 1234, "Jesper Krasse")
-
 );
