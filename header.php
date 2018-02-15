@@ -1,4 +1,16 @@
-<?php include "functionlogin.php"?>
+<?php 
+session_start();
+
+#funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
+if(!isset($_SESSION["loggedin"])){
+    header("location:login.php");
+}
+
+include "variabels.php";
+include "functions/functionlogin.php";
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +18,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>
+        <?php 
+        echo siteName;
+        if(isset($pagetitle)){
+            echo " - ".$pagetitle;
+
+        }
+        ?>
+    </title>
 </head>
 
 
