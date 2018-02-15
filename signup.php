@@ -1,10 +1,12 @@
 <?php 
 include "variabels.php";
+include "functions/functionsignup.php";
 $pagetitle = "Sign up"; ?>
 
 <head>
 <title>
     <?php 
+    // Funktion för att sätta sidnamn på varje sida där $pagetitle finns
         echo siteName;
         if(isset($pagetitle)){
             echo " - ".$pagetitle;
@@ -21,13 +23,13 @@ $pagetitle = "Sign up"; ?>
         <h2>
             Fill out this information to become a member 😎
         </h2>
-        <form action='index.php' METHOD='POST'>      
+        <form action='signup.php' METHOD='POST'>      
             <div class='nameandinput'>
                 <div class='name'>
                     Username: 
                 </div> 
                 <div class='input'>
-                    <input type='text' name='username'>
+                    <input type='text' name='signupusername'>
                 </div>
             </div>
             <div class='nameandinput'>
@@ -35,7 +37,7 @@ $pagetitle = "Sign up"; ?>
                     Password: 
                 </div> 
                 <div class='input'>
-                    <input type='password' name='password'>
+                    <input type='password' name='signuppassword'>
                 </div>
             </div>
             <div class='nameandinput'>
@@ -43,12 +45,14 @@ $pagetitle = "Sign up"; ?>
                     Full name 
                 </div> 
                 <div class='input'>
-                    <input type='text' name='fullName'>
+                    <input type='text' name='signupfullName'>
                 </div>
             </div>
                 <input id="loginButton" type="submit" value="Sign up">
                 <a href="login.php"><button id="loginButton">Back</button></a>
         </form>
+        <?php print_r($users);
+        ?>
     </div>
 </body>
 
