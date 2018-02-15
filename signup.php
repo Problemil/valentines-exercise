@@ -53,6 +53,8 @@ $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
                 <input id="loginButton" type="submit" value="Sign up">
                 <a href="login.php"><button type="button" id="loginButton">Back</button></a>
         </form>
+        <br/>
+        <div><h1 style='color:black;'><?php echo $grattisNyKund;?></h1></div>
     </div>
 </body>
 
