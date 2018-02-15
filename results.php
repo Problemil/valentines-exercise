@@ -9,9 +9,6 @@ if(!isset($_SESSION["adminloggedin"])){
 if(isset($_POST["adminusername"])){
     for ($i = 0; $i < count($users); $i++){
         if($_POST["adminusername"] == $users[$i][0] and $_POST["adminpassword"] == $users[$i][1]){
-  
-            // echo "<script>alert('Hello ". $_SESSION["fullname"] ."! Your IP adress is: ".$_SERVER['REMOTE_ADDR']." ');</script>";
-            
             $_SESSION["adminloggedin"] = true; 
            
         }
@@ -21,6 +18,7 @@ if(isset($_POST["adminusername"])){
 ?>
 
 <?php 
-print_r($_SESSION["users"]);
 
-echo "<a href='index.php'><button>Tillbaka</button></a>";
+echo "<h1>Här är en lista på alla användare</h1><br/><a href='index.php'><button>Tillbaka</button></a><br/><br/>";
+
+print_r($_SESSION["users"]);

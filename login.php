@@ -31,9 +31,9 @@
             <input id="submit" type="submit" value="PRESS ME">
         </form>
     </div>
-    <!-- <div id="notAMemberDiv">
+    <div id="notAMemberDiv">
         <h3>Not a member?</h3>
         <a href="signup.php"><button id="loginButton">SIGN UP HERE</button></a>
-    </div> -->
+    </div>
 </body>
 
