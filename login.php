@@ -7,6 +7,11 @@
 </head>
 
 <body id="loginBody">
+<?php 
+
+// $_SESSION["loggedin"] = true;
+echo $_SESSION["loggedin"]; ?>
+
     <div id="loginDiv">
     <h1>
     Please login to view the page 🤩

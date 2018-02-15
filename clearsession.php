@@ -1,6 +1,7 @@
 <?php
 session_start();
 
-unset ($_SESSION["loggedin"]);
+// $_SESSION["loggedin"] = false;
+session_destroy();
 header("location:login.php");
 die(wooops);
