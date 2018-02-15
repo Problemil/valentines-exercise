@@ -1,10 +1,11 @@
 <?php 
 session_start();
-include "variabels.php";
-include "functions/functionlogin.php";
 if(!isset($_SESSION["loggedin"])){
     header("location:login.php");
 }
+include "variabels.php";
+include "functions/functionlogin.php";
+
 
 ?>
 <!DOCTYPE html>
