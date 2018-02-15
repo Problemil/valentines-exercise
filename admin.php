@@ -1,5 +1,6 @@
 <?php 
     session_start();
+    print_r($_SESSION["adminloggedin"]);
 ?>
 
 <head>
@@ -17,7 +18,7 @@
                     Username: 
                 </div> 
                 <div class='input'>
-                    <input type='text' name='username'>
+                    <input type='text' name='adminusername'>
                 </div>
             </div>
             <div class='nameandinput'>
@@ -25,7 +26,7 @@
                     Password: 
                 </div> 
                 <div class='input'>
-                    <input type='password' name='password'>
+                    <input type='password' name='adminpassword'>
                 </div>
             </div>
             <input id="submit" type="submit" value="PRESS ME">
