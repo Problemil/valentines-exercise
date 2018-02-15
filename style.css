@@ -1,5 +1,6 @@
 body{
     margin:0;
+    background-color: red;
 }
 
 .header{
@@ -16,6 +17,12 @@ body{
 
 .logo{
     font-size: 40px;
+}
+
+#logga{
+    font-size: 50px;
+    color:red;
+    text-decoration: none;
 }
 
 a{
@@ -50,7 +57,7 @@ a{
 .footer{
     width:100%;
     background-color: black;
-    height:80px;
+    height:60px;
     color:red;
     display: flex;
     align-items: center;

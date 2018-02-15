@@ -1,7 +1,8 @@
 <?php 
     session_start();
-    $pagetitle = "Produkter";
+    $pagetitle = "Recept";
     include 'header.php';
+   
    
 ?>
  
@@ -13,7 +14,7 @@
   <h1 class = "produkth1"> Här är en tabell på våra bästa recept! </h1>
   
   <div class = "tabell"> 
-    <?php
+<?php
   $produkter = array(
     array("name" => "Nutellacheesecake", "betyg" => "7/10", "details" => "50g Smör,5 gelatinblad 3 dl vispgrädde 100 g naturell färskost 3 dl nutella (3 dl motsvarar ca 300 g) färska hallon
     hackade nötter, citronmeliss "),
@@ -39,6 +40,6 @@
 <?php 
 include 'footer.php';
 
-    ?>
+?>
 
     
