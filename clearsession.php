@@ -2,10 +2,7 @@
 session_start();
 
 unset($_SESSION["loggedin"]);
-if ($_SESSION["loggedin"]) {
-    
-    print_r($_SESSION["loggedin"]);
-}
+// unset($_SESSION["users"]);
 
 // session_destroy();
 header("location:login.php");
