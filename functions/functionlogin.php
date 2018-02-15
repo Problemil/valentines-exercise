@@ -20,10 +20,10 @@ if(isset($_POST["username"])){
 for ($i = 0; $i < count($_SESSION["users"]); $i++){
     if($_SESSION["username"] == $_SESSION["users"][$i][0] and $_SESSION["password"] == $_SESSION["users"][$i][1]){
         $_SESSION["fullname"] = $users[$i][2];
-        echo "<script>alert('Hello ". $_SESSION["fullname"] ."!');</script>";
         $_SESSION["loggedin"] = true; 
        
     }
 }
+
 
 
