@@ -9,8 +9,8 @@ if(isset($_POST["signupusername"])){
     
 }
 
-
-    
+array_push($users,$tillfälligarray);
+$_SESSION["users"] = $users;
 
 
 // $users=array("$_SESSION['signupusername']", "$_SESSION['signuppassword']");

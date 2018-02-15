@@ -2,12 +2,12 @@
 session_start();
 
 include "functions/functionlogin.php";
+include "variabels.php";
 #funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
 if($_SESSION["loggedin"] == false){
     header("location:login.php");
 }
 
-include "variabels.php";
 
 
 ?>

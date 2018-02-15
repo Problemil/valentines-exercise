@@ -49,9 +49,9 @@ $pagetitle = "Sign up"; ?>
                 </div>
             </div>
                 <input id="loginButton" type="submit" value="Sign up">
-                <a href="login.php"><button id="loginButton">Back</button></a>
+                <a href="login.php"><button type="button" id="loginButton">Back</button></a>
         </form>
-        <?php print_r($tillfälligarray);
+        <?php print_r($users);
         ?>
     </div>
 </body>
