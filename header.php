@@ -46,6 +46,7 @@ if($_SESSION["loggedin"] == false){
       <a href="produkter.php">Produkter</a>
       <a href="recept.php">Recept</a>
       <a href="kontakt.php">Kontakta oss</a>
+      <a href ="admin.php"> Admin </a>
     </div>
   </div>
   

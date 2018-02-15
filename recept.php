@@ -6,7 +6,16 @@
    
 ?>
  
+<style>
+body {
+  background-color: red;
+}
 
+.productTable {
+  background-color: white;
+}
+  
+</style>
 
 <body>
 
