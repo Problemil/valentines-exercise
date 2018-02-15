@@ -5,7 +5,7 @@
 
    include 'header.php';
    ?>
-    <h1>Kontakta oss, vi är experter!
+    <h1>Vi är dina kärleksexperter!
     Vi hör till på Kärleksstigen 69 46182 Göteborg</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium gravida lectus. Nunc lobortis dolor sed auctor rutrum.
      Sed eu laoreet dolor. In et ipsum a est ullamcorper vehicula. Donec pulvinar nisi elit, vel sodales massa sodales vitae. 

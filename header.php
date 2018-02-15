@@ -35,15 +35,21 @@ if($_SESSION["loggedin"] == false){
 
 <div class="header">
 
-    <div class="logo">Love boxes</div>
+    <div class="logo">Love Boxes</div>
     <img src="pics/blomma.jpg" class="headPic">
     <img src="pics/blomma.jpg" class="headPic">
     <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
+<<<<<<< HEAD
     <a href="index.php">Start</a>
     <a href="omoss.php">Om oss</a>    
     <a href="produkter.php">Produkter</a>
+=======
+      <a href="produkter.php">Produkter</a>
+      <a href="kontakt.php">Kontakta oss</a>
+      <a href="omoss.php">Om oss</a>
+>>>>>>> 76958d8b9e4017de18f4dcb8c5c616ca12a2e560
       <a href="recept.php">Recept</a>
       <a href="#">Kontakta oss</a>
     </div>
