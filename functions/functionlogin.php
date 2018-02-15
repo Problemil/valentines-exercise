@@ -5,7 +5,10 @@ session_start();
 include "data.php";
 
 #Här lägger jag användarna från arrayen $users(från data.php) i session.
-$_SESSION["users"] = $users;
+// if(!isset($_SESSION["users"])){
+// $_SESSION["users"] = $users;
+
+// }
 
 #Här kollar jag om det finns nått i POST, om det gör det så läggs det i SESSION
 if(isset($_POST["username"])){

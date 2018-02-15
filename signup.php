@@ -51,8 +51,6 @@ $pagetitle = "Sign up"; ?>
                 <input id="loginButton" type="submit" value="Sign up">
                 <a href="login.php"><button type="button" id="loginButton">Back</button></a>
         </form>
-        <?php print_r($users);
-        ?>
     </div>
 </body>
 
