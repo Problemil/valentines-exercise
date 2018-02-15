@@ -2,9 +2,9 @@
 
 $users = array(
     array("daniel", 1234, "Daniel Stenå"),
-    array("joakim", 1234, "Joakim Edward"),
-    array("emil", 1234, "Emil Wärdig Tsoukalas"),
-    array("jesper", 1234, "Jesper Krasse")
+    array("joakim", 1234, "Joakim MMA Edward"),
+    array("emil", 1234, "Emil WorthY Tsoukalas"),
+    array("jesper", 1234, "Jesper MasterOfTables Krasse")
 );
 
 $produkter = array(
