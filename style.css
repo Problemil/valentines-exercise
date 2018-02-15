@@ -52,10 +52,14 @@ a{
     background-color: black;
     height:80px;
     color:red;
-<<<<<<< HEAD
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
 .produktContent{
@@ -71,12 +75,7 @@ a{
     width:150px;
     border:2px solid black;
     margin-bottom:20px;
-=======
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
->>>>>>> 22e04acb1e3fec52fa47cb9dfd055af73a7be43e
+ 
 }
 
 /* CSS FRÅN DANIEL */
@@ -184,4 +183,5 @@ input{
   
     .productTable {
       margin: auto;
+      width: 60%;
     }
