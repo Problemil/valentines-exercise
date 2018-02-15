@@ -1,11 +1,9 @@
-
-    <?php 
+<?php 
     session_start();
     $pagetitle = "Produkter";
     include 'header.php';
    
-   
-   ?>
+?>
  
 
 
