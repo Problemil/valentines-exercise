@@ -48,6 +48,6 @@ if($_SESSION["loggedin"] == false){
   </div>
   
   
-    <div class="login"><a href="clearsession.php"><button>utlogg</button></a></div>
+    <div><a href="clearsession.php"><button>Logga ut</button></a></div>
 
 </div>
