@@ -42,7 +42,7 @@ if($_SESSION["loggedin"] == false){
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
       <a href="produkter.php">Produkter</a>
-      <a href="#">Kontakta oss</a>
+      <a href="kontakt.php">Kontakta oss</a>
       <a href="omoss.php">Om oss</a>
       <a href="recept.php">Recept</a>
     </div>
