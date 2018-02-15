@@ -1,5 +1,5 @@
 <?php include 'header.php';
-
+ $pagetitle = "Om oss";
 ?>
 <form action="omoss.php" method="GET">
     <input type="submit" name="pensionär" value="pensionär">
