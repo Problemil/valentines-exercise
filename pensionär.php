@@ -1,4 +1,6 @@
+<?php include 'header.php';
 
+?>
 <form action="pensionär.php" method="GET">
     <input type="submit" name="pensionär" value="pensionär">
 </form>
@@ -25,5 +27,8 @@ else{
 
 ?>
 
+<?php 
+include 'footer.php';
 
+    ?>
 

@@ -37,7 +37,16 @@ if($_SESSION["loggedin"] == false){
     <div class="logo">Love boxes</div>
     <img src="pics/blomma.jpg" class="headPic">
     <img src="pics/blomma.jpg" class="headPic">
-    <div class="navProducts"><a href="produkt.php">Produkter</a></div>
+    <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="produkt.php">Produkter</a>
+      <a href="#">Kontakta oss</a>
+      <a href="omoss.php">Om oss</a>
+    </div>
+  </div>
+  
+  
     <div class="login"><a href="clearsession.php"><button>utlogg</button></a></div>
 
 </div>
