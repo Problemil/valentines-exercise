@@ -68,14 +68,19 @@ a{
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top:30px;
+    align-content: space-between;
 }
 
 .produktDiv{
     height:150px;
     width:150px;
     border:2px solid black;
+    
+    
+}
+
+.card{
     margin-bottom:20px;
- 
 }
 
 /* CSS FRÅN DANIEL */
