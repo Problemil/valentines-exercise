@@ -18,6 +18,7 @@ if($_SESSION["loggedin"] == false){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>
         <?php 
         echo siteName;
@@ -40,13 +41,14 @@ if($_SESSION["loggedin"] == false){
     <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
-      <a href="produkt.php">Produkter</a>
+      <a href="produkter.php">Produkter</a>
       <a href="#">Kontakta oss</a>
       <a href="omoss.php">Om oss</a>
+      <a href="recept.php">Recept</a>
     </div>
   </div>
   
   
-    <div class="login"><a href="clearsession.php"><button>utlogg</button></a></div>
+    <div><a href="clearsession.php"><button>Logga ut</button></a></div>
 
 </div>
