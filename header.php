@@ -1,8 +1,11 @@
 <?php 
 session_start();
+
+#funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
 if(!isset($_SESSION["loggedin"])){
     header("location:login.php");
 }
+
 include "variabels.php";
 include "functions/functionlogin.php";
 
