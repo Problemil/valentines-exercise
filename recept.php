@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    $pagetitle = "Produkter";
+    $pagetitle = "Recept";
     include 'header.php';
    
    
