@@ -35,7 +35,7 @@ if($_SESSION["loggedin"] == false){
 
 <div class="header">
 
-    <div class="logo">Love boxes</div>
+    <div class="logo">Love Boxes</div>
     <img src="pics/blomma.jpg" class="headPic">
     <img src="pics/blomma.jpg" class="headPic">
     <div class="dropdown">
