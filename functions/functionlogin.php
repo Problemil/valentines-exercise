@@ -11,19 +11,20 @@ $_SESSION["users"] = $users;
 }
 
 #Här kollar jag om det finns nått i POST, om det gör det så läggs det i SESSION
-if(isset($_POST["username"])){
-    $_SESSION["username"] = $_POST["username"];
-    $_SESSION["password"] = $_POST["password"];
-}
 
 #For loop som sedan kollar informationen användaren skrivit in mot informationen i $users arrayen
-for ($i = 0; $i < count($_SESSION["users"]); $i++){
-    if($_SESSION["username"] == $_SESSION["users"][$i][0] and $_SESSION["password"] == $_SESSION["users"][$i][1]){
-        $_SESSION["fullname"] = $users[$i][2];
-        $_SESSION["loggedin"] = true; 
-       
+if(isset($_POST["username"])){
+    for ($i = 0; $i < count($_SESSION["users"]); $i++){
+        if($_POST["username"] == $_SESSION["users"][$i][0] and $_POST["password"] == $_SESSION["users"][$i][1]){
+            $_SESSION["fullname"] = $users[$i][2];
+            echo "<script>alert('Hello ". $_SESSION["fullname"] ."! Your IP adress is: ".$_SERVER['REMOTE_ADDR']." ');</script>";
+            
+            $_SESSION["loggedin"] = true; 
+           
+        }
     }
 }
+
 
 
 

@@ -54,7 +54,12 @@ a{
     color:red;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
 .produktContent{
@@ -76,6 +81,10 @@ a{
 
 .card{
     margin-bottom:20px;
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> e10addab462dc9d1f1324ac1c4fce57564765c47
 }
 
 /* CSS FRÅN DANIEL */
@@ -174,4 +183,14 @@ input{
     text-align: center;
     width:70%;
     margin: auto;
+
 }
+
+.produkth1 {
+    text-align: center;
+    }
+  
+    .productTable {
+      margin: auto;
+      width: 60%;
+    }

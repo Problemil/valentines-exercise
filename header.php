@@ -41,13 +41,14 @@ if($_SESSION["loggedin"] == false){
     <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
-      <a href="produkt.php">Produkter</a>
+      <a href="produkter.php">Produkter</a>
       <a href="#">Kontakta oss</a>
       <a href="omoss.php">Om oss</a>
+      <a href="recept.php">Recept</a>
     </div>
   </div>
   
   
-    <div class="login"><a href="clearsession.php"><button>utlogg</button></a></div>
+    <div><a href="clearsession.php"><button>Logga ut</button></a></div>
 
 </div>
