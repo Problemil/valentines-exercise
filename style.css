@@ -52,6 +52,31 @@ a{
     background-color: black;
     height:80px;
     color:red;
+<<<<<<< HEAD
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produktContent{
+    display: flex;
+    background-color: red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top:30px;
+}
+
+.produktDiv{
+    height:150px;
+    width:150px;
+    border:2px solid black;
+    margin-bottom:20px;
+=======
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+>>>>>>> 22e04acb1e3fec52fa47cb9dfd055af73a7be43e
 }
 
 /* CSS FRÅN DANIEL */
@@ -101,4 +126,53 @@ input{
     width:150px;
     height:30px;
     font-size: 14px;
+}
+
+
+/* JESPERS CSS */ 
+
+.productTable {
+    font-size: 20px;
+}
+
+.dropbtn {
+
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.divbox {
+    text-align: center;
+    width:70%;
+    margin: auto;
 }

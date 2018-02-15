@@ -1,7 +1,7 @@
 
 <div class="footer">
 
-    FOOTER
+    &copy Loveboxes island, INC
 
 </div>
 
