@@ -1,15 +1,19 @@
 <?php 
-require "variabels.php";
-require "functions/functionsignup.php";
 $pagetitle = "Sign up"; 
+require "variabels.php";
+require "data.php";
+require "functions/functions.php";
 $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
+
+signuplogin($users, $_POST["signupusername"],$_POST["signuppassword"],$_POST["signupfullName"] );
+
 ?>
 
 <head>
 <title>
     <?php 
     // Funktion för att sätta sidnamn på varje sida där $pagetitle finns
-        echo siteName;
+        echo SITENAME;
         if(isset($pagetitle)){
             echo " - ".$pagetitle;
 
@@ -54,7 +58,7 @@ $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
                 <a href="login.php"><button type="button" id="loginButton">Back</button></a>
         </form>
         <br/>
-        <div><h1 style='color:black;'><?php echo $grattisNyKund;?></h1></div>
+        <div><h1 style='color:black;'><?php echo $_SESSION["grattisNyKund"];?></h1></div>
     </div>
 </body>
 
