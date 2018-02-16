@@ -9,9 +9,6 @@ if(!isset($_SESSION["users"])){
 $_SESSION["users"] = $users;
 
 }
-
-#Här kollar jag om det finns nått i POST, om det gör det så läggs det i SESSION
-
 #For loop som sedan kollar informationen användaren skrivit in mot informationen i $users arrayen
 if(isset($_POST["username"])){
     for ($i = 0; $i < count($_SESSION["users"]); $i++){
