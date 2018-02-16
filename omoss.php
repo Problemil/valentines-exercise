@@ -1,6 +1,6 @@
 <?php 
 $pagetitle = "Om oss";
-include 'header.php';
+require 'header.php';
 ?>
 <form action="omoss.php" method="GET">
     <input type="submit" name="pensionär" value="pensionär">
@@ -41,6 +41,6 @@ else{
 ?>
 
 <?php 
-include 'footer.php';
+require 'footer.php';
 
     ?>

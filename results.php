@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "data.php";
+require "data.php";
 
 if(!isset($_SESSION["adminloggedin"])){
     header("location:admin.php");

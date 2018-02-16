@@ -1,6 +1,6 @@
 <?php 
-include "variabels.php";
-include "functions/functionsignup.php";
+require "variabels.php";
+require "functions/functionsignup.php";
 $pagetitle = "Sign up"; 
 $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
 ?>

@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-include "functions/functionlogin.php";
-include "variabels.php";
+require "functions/functionlogin.php";
+require "variabels.php";
 #funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
 if($_SESSION["loggedin"] == false){
     header("location:login.php");
@@ -21,7 +21,7 @@ if($_SESSION["loggedin"] == false){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>
         <?php 
-        echo siteName;
+        echo SITENAME;
         if(isset($pagetitle)){
             echo " - ".$pagetitle;
 

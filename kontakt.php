@@ -3,7 +3,7 @@
 
    $pagetitle = "Kontakt";
 
-   include 'header.php';
+   require 'header.php';
    ?>
     <h1>Vi är dina kärleksexperter!
     Vi hör till på Kärleksstigen 69 46182 Göteborg</h1>
@@ -17,5 +17,5 @@
     <?php
     
     
-   include 'footer.php';
+   require 'footer.php';
     ?>

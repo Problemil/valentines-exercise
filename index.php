@@ -1,8 +1,9 @@
 <?php 
     $pagetitle = "Start"; 
-    include 'header.php';
-    include 'content.php';
-    include 'footer.php';
+    require 'header.php';
+    print_r(LOGGED_IN_USER);
+    require 'content.php';
+    require 'footer.php';
 ?>
 
 

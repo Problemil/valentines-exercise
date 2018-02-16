@@ -1,7 +1,7 @@
 <?php 
     session_start();
     $pagetitle = "Recept";
-    include 'header.php';
+    require 'header.php';
    
    
 ?>
@@ -47,7 +47,7 @@ body {
 
 </div>
 <?php 
-include 'footer.php';
+require 'footer.php';
 
 ?>
 
