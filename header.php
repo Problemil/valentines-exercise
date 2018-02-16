@@ -3,7 +3,7 @@ session_start();
 require "data.php";
 require "variabels.php";
 require "functions/functions.php";
-login($users, $_POST["username"], $_POST["password"] );
+login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
 #funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
 if($_SESSION["loggedin"] == false){

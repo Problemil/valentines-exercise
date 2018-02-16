@@ -7,6 +7,8 @@ $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
 
 signuplogin($users, $_POST["signupusername"],$_POST["signuppassword"],$_POST["signupfullName"] );
 
+print_r($_SESSION["users"]);
+
 ?>
 
 <head>
@@ -58,7 +60,7 @@ signuplogin($users, $_POST["signupusername"],$_POST["signuppassword"],$_POST["si
                 <a href="login.php"><button type="button" id="loginButton">Back</button></a>
         </form>
         <br/>
-        <div><h1 style='color:black;'><?php echo $_SESSION["grattisNyKund"];?></h1></div>
+        <div><h1 style='color:black;'><?php echo $_POST["grattisNyKund"];?></h1></div>
     </div>
 </body>
 

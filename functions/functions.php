@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $_SESSION["users"];
 
 function signuplogin($users, $username, $password, $fullname ){
     #om $username INTE är tom:
@@ -10,11 +11,12 @@ function signuplogin($users, $username, $password, $fullname ){
 
             #($username och $password inte är tom:
             if(!empty($username and !empty($password) )){
-                //Hit går den
-                $_SESSION["grattisNyKund"] = "Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!";
+                
+                $_POST["grattisNyKund"] = "Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!";
 
                 $tillfälligarray = array($username, $password, $fullname);
                 array_push($users,$tillfälligarray);
+                      $_SESSION["users"] = $users;
             }
             else{
                 echo "Du glömde fylla i username och/eller lösenord!";   
@@ -23,7 +25,7 @@ function signuplogin($users, $username, $password, $fullname ){
     }
 }
 
-function login($users, $username, $password ){
+function login($users, $username, $password){
 
     #For loop som sedan kollar informationen användaren skrivit in mot informationen i $users arrayen
     if(isset($username)){
