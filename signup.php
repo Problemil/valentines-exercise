@@ -5,9 +5,9 @@ require "data.php";
 require "functions/functions.php";
 $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
 
+//här kallar vi på signupfunktionen
 signuplogin($users, $_POST["signupusername"],$_POST["signuppassword"],$_POST["signupfullName"] );
 
-print_r($_SESSION["users"]);
 
 ?>
 
