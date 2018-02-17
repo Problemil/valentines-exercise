@@ -1,10 +1,10 @@
 <?php 
 
 $users = array(
-    array("daniel", 1234, "Daniel Stenå"),
-    array("joakim", 1234, "Joakim MMA Edward"),
-    array("emil", 1234, "Emil WorthY Tsoukalas"),
-    array("jesper", 1234, "Jesper MasterOfTables Krasse")
+    array("username" => "daniel", "password" => 1234, "fullname" => "Daniel Stenå","regIP" => "HIDDEN"),
+    array("username" => "joakim", "password" => 1234, "fullname" => "Joakim MMA Edward","regIP" => "HIDDEN"),
+    array("username" => "emil", "password" => 1234, "fullname" => "Emil WorthY Tsoukalas","regIP" => "HIDDEN"),
+    array("username" => "jesper", "password" => 1234, "fullname" => "Jesper MasterOfTables Krasse","regIP" => "HIDDEN")
 );
 
 $produkter = array(

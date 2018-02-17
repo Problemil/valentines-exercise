@@ -14,7 +14,7 @@ function signuplogin($users, $username, $password, $fullname ){
                 
                 $_POST["grattisNyKund"] = "Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!";
 
-                $tillfälligarray = array($username, $password, $fullname);
+                $tillfälligarray = array("username" => $username ,"password" =>  $password, "fullname" => $fullname, "regIP" => $_SERVER['REMOTE_ADDR']) ;
                 array_push($users,$tillfälligarray);
                       $_SESSION["users"] = $users;
             }
@@ -30,8 +30,8 @@ function login($users, $username, $password){
     #For loop som sedan kollar informationen användaren skrivit in mot informationen i $users arrayen
     if(isset($username)){
         for ($i = 0; $i < count($users); $i++){
-            if($username == $users[$i][0] and $password == $users[$i][1]){
-                $_SESSION["fullname"] = $users[$i][2];
+            if($username == $users[$i]["username"] and $password == $users[$i]["password"]){
+                $_SESSION["fullname"] = $users[$i]["fullname"];
                 echo "<script>alert('Hello ". $_SESSION["fullname"] ."! Your IP adress is: ".$_SERVER['REMOTE_ADDR']." ');</script>";
                 
                 $_SESSION["loggedin"] = true; 

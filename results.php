@@ -26,18 +26,17 @@ if(isset($_POST["adminusername"])){
 
 
 
+<table border="1px;" class="productTable">
+ <th>Username</th> <th>Password</th> <th> Full Name </th><th> Registrated IP </th>
 <?php 
-    for ($i = 0; $i < count($_SESSION["users"]); $i++){
-        echo "<div style='width:100%; text-align:center;'><h2>".$i."</h2><table style='width:100% border:1px solid black;'>
-        <tr>
-        <th>".$_SESSION["users"][$i][0]."</th>
-        <th>".$_SESSION["users"][$i][1]."</th> 
-        <th>".$_SESSION["users"][$i][2]."</th>
-        </tr>
-        </table>"
-        ;
+
+    foreach($_SESSION["users"] as $a)
+    {
+      echo "<tr><td>".$a["username"]."</td><td>".$a["password"]."</td> <td>".$a["fullname"]."</td><td>".$a["regIP"]."</td></tr>";
     }
 ?>
+
+</table>
 
 <br/><br/>
 <a href='deleteusers.php'><button>Delete last users in list</button></a><br/>
