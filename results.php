@@ -8,7 +8,7 @@ if(!isset($_SESSION["adminloggedin"])){
 
 if(isset($_POST["adminusername"])){
     for ($i = 0; $i < count($users); $i++){
-        if($_POST["adminusername"] == $users[$i][0] and $_POST["adminpassword"] == $users[$i][1]){
+        if($_POST["adminusername"] == $_SESSION["users"][$i]["username"] and $_POST["adminpassword"] == $_SESSION["users"][$i]["password"]){
             $_SESSION["adminloggedin"] = true; 
             
         }
