@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    session_start();  
 ?>
 
 <head>
@@ -9,15 +9,15 @@
 <body id="loginBody">
     <div id="loginDiv">
     <h1>
-    Please login to view the page 🤩
+    Login for to view the admin page! 
     </h1>
-        <form action='index.php' METHOD='POST'>      
+        <form action='results.php' METHOD='POST'>      
             <div class='nameandinput'>
                 <div class='name'>
                     Username: 
                 </div> 
                 <div class='input'>
-                    <input type='text' name='username'>
+                    <input type='text' name='adminusername'>
                 </div>
             </div>
             <div class='nameandinput'>
@@ -25,15 +25,10 @@
                     Password: 
                 </div> 
                 <div class='input'>
-                    <input type='password' name='password'>
+                    <input type='password' name='adminpassword'>
                 </div>
             </div>
             <input id="submit" type="submit" value="PRESS ME">
         </form>
     </div>
-    <div id="notAMemberDiv">
-        <h3>Not a member?</h3>
-        <a href="signup.php"><button id="loginButton">SIGN UP HERE</button></a>
-    </div>
 </body>
-

@@ -1,8 +1,9 @@
 <?php 
     $pagetitle = "Start"; 
-    include 'header.php';
-    include 'content.php';
-    include 'footer.php';
+   print_r ($_SESSION["newUsers"]);
+    require 'header.php';
+    require 'content.php';
+    require 'footer.php';
 ?>
 
 

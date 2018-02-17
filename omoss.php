@@ -1,12 +1,17 @@
-<?php include 'header.php';
-
+<?php 
+$pagetitle = "Om oss";
+require 'header.php';
 ?>
 <form action="omoss.php" method="GET">
     <input type="submit" name="pensionär" value="pensionär">
 </form>
 <a href="omoss.php"><button>standard</button></a>
 
-
+<style>
+body {
+  background-color: red;
+}
+</style>
 <?php
 
 $text = "
@@ -36,6 +41,6 @@ else{
 ?>
 
 <?php 
-include 'footer.php';
+require 'footer.php';
 
     ?>

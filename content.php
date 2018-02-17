@@ -8,5 +8,8 @@ Morbi ultricies euismod ipsum, nec tristique arcu viverra at. Nunc turpis augue,
 
 Praesent faucibus, felis non porttitor maximus, velit neque rutrum justo, viverra dictum mi nunc vel nibh. Nullam sollicitudin elit ac feugiat condimentum. Quisque cursus diam sit amet est laoreet, ut viverra ante hendrerit. Nulla tempus felis eu eros posuere, eu mattis neque eleifend. Aliquam tempus congue mauris id pharetra. Ut auctor eget neque sit amet viverra. Morbi eleifend ex id est vulputate, ac semper ipsum aliquam.
 
-<br><br><br><button>ZOOM IN</button><button>ZOOM UT</button>
-</div></div>
+Praesent faucibus, felis non porttitor maximus, velit neque rutrum justo, viverra dictum mi nunc vel nibh. Nullam sollicitudin elit ac feugiat condimentum. Quisque cursus diam sit amet est laoreet, ut viverra ante hendrerit. Nulla tempus felis eu eros posuere, eu mattis neque eleifend. Aliquam tempus congue mauris id pharetra. Ut auctor eget neque sit amet viverra. Morbi eleifend ex id est vulputate, ac semper ipsum aliquam.
+
+
+
+

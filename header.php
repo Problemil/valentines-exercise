@@ -1,8 +1,10 @@
 <?php 
 session_start();
+require "data.php";
+require "variabels.php";
+require "functions/functions.php";
+login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
-include "functions/functionlogin.php";
-include "variabels.php";
 #funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
 if($_SESSION["loggedin"] == false){
     header("location:login.php");
@@ -21,7 +23,7 @@ if($_SESSION["loggedin"] == false){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>
         <?php 
-        echo siteName;
+        echo SITENAME;
         if(isset($pagetitle)){
             echo " - ".$pagetitle;
 
@@ -51,12 +53,21 @@ if($_SESSION["loggedin"] == false){
     <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
+<<<<<<< HEAD
         <a href="index.php">Start</a>
         <a href="omoss.php">Om oss</a>    
         <a href="produkter.php">Produkter</a>
         <a href="recept.php">Recept</a>
         <a href="#">Kontakta oss</a>
     </div>
+=======
+    <a href="index.php">Start</a>
+    <a href="omoss.php">Om oss</a>    
+      <a href="produkter.php">Produkter</a>
+      <a href="recept.php">Recept</a>
+      <a href="kontakt.php">Kontakta oss</a>
+      <a href ="admin.php"> Admin </a>
+>>>>>>> 3a094f98e1541b204c21e28f8bff947b68050186
     </div>
   
   

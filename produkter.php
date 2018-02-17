@@ -1,6 +1,6 @@
 <?php 
-include 'header.php';
-include 'data.php';
+require 'header.php';
+require 'data.php';
 
 
 
@@ -18,4 +18,4 @@ foreach($produkter as $key => $value){
 </div>
 
 
-<?php include 'footer.php'; ?>
+<?php require 'footer.php'; ?>

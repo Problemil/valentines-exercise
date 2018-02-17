@@ -1,12 +1,21 @@
 <?php 
     session_start();
-    $pagetitle = "Produkter";
-    include 'header.php';
+    $pagetitle = "Recept";
+    require 'header.php';
    
    
 ?>
  
+<style>
+body {
+  background-color: red;
+}
 
+.productTable {
+  background-color: white;
+}
+  
+</style>
 
 <body>
 
@@ -38,7 +47,7 @@
 
 </div>
 <?php 
-include 'footer.php';
+require 'footer.php';
 
 ?>
 
