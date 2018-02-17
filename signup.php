@@ -6,7 +6,7 @@ require "functions/functions.php";
 $_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
 
 //här kallar vi på signupfunktionen
-signuplogin($users, $_POST["signupusername"],$_POST["signuppassword"],$_POST["signupfullName"] );
+signuplogin($_SESSION["users"], $_POST["signupusername"],$_POST["signuppassword"],$_POST["signupfullName"] );
 echo "<h1>array</h1>";
 print_r($_SESSION["users"]);
 echo "<br/>";
