@@ -53,21 +53,12 @@ if($_SESSION["loggedin"] == false){
     <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
-<<<<<<< HEAD
         <a href="index.php">Start</a>
         <a href="omoss.php">Om oss</a>    
         <a href="produkter.php">Produkter</a>
         <a href="recept.php">Recept</a>
         <a href="#">Kontakta oss</a>
     </div>
-=======
-    <a href="index.php">Start</a>
-    <a href="omoss.php">Om oss</a>    
-      <a href="produkter.php">Produkter</a>
-      <a href="recept.php">Recept</a>
-      <a href="kontakt.php">Kontakta oss</a>
-      <a href ="admin.php"> Admin </a>
->>>>>>> 3a094f98e1541b204c21e28f8bff947b68050186
     </div>
   
   
