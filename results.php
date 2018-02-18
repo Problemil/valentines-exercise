@@ -1,20 +1,18 @@
 <?php
 session_start();
 require "data.php";
+    if(isset($_POST["adminusername"])){
+        for ($i = 0; $i < count($users); $i++){
+            if($_POST["adminusername"] == $_SESSION["users"][$i]["username"] and $_POST["adminpassword"] == $_SESSION["users"][$i]["password"]){
+                $_SESSION["adminloggedin"] = true;        
+            }
+        }
+    }
 
 if(!isset($_SESSION["adminloggedin"])){
     header("location:admin.php");
 }
 
-if(isset($_POST["adminusername"])){
-    for ($i = 0; $i < count($users); $i++){
-        if($_POST["adminusername"] == $_SESSION["users"][$i]["username"] and $_POST["adminpassword"] == $_SESSION["users"][$i]["password"]){
-            $_SESSION["adminloggedin"] = true; 
-            
-        }
-    }
-    
-}
 
 
 ?>

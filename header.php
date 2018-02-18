@@ -3,12 +3,16 @@ session_start();
 require "data.php";
 require "variabels.php";
 require "functions/functions.php";
+
 login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
-#funktion som kollar om man är inloggad, annars skickas man till inloggningssidan.
 if($_SESSION["loggedin"] == false){
     header("location:login.php");
 }
+if(empty($_SESSION["users"])){
+    $_SESSION["users"]  = $users;
+}
+    
 
 
 
