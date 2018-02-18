@@ -54,23 +54,10 @@ if(empty($_SESSION["users"])){
                 <a href="#">Kontakta oss</a>
             </div>
         </div> -->
-    </div>
+    
     <img src="pics/blomma.jpg" class="headPic">
     <img src="pics/blomma.jpg" class="headPic">
     <div class="dropdown">
-<<<<<<< HEAD
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href="index.php">Start</a>
-            <a href="omoss.php">Om oss</a>    
-            <a href="produkter.php">Produkter</a>
-            <a href="recept.php">Recept</a>
-            <a href="kontakt.php">Kontakta oss</a>
-            <a href ="admin.php"> Admin </a>
-            <a href="clearsession.php">Logga ut</a>
-        </div>
-    </div>
-=======
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
         <a href="index.php">Start</a>
@@ -84,5 +71,4 @@ if(empty($_SESSION["users"])){
   
     <div><a href="clearsession.php"><button>Logga ut</button></a></div>
 
->>>>>>> 68cc4b1d415abbf18c71494e86457421ea337298
 </div>
