@@ -3,16 +3,10 @@ $pagetitle = "Sign up";
 require "variabels.php";
 require "data.php";
 require "functions/functions.php";
-$_SESSION["signupurllastname"] = $_SERVER['REQUEST_URI'];
 
-//här kallar vi på signupfunktionen
+$_SESSION["kommerfrånsignup"] = $_SERVER['REQUEST_URI'];
 signuplogin($_SESSION["users"], $_POST["signupusername"],$_POST["signuppassword"],$_POST["signupfullName"] );
-echo "<h1>array</h1>";
-print_r($_SESSION["users"]);
-echo "<br/>";
-echo "<h1>array + signup</h1>";
-echo "<br/>";
-print_r($users);
+
 
 ?>
 

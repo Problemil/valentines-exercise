@@ -3,6 +3,12 @@ session_start();
 require "data.php";
 require "variabels.php";
 require "functions/functions.php";
+if($_SESSION["kommerfrånsignup"] == URLPREFIX."signup.php" ){
+
+    echo "<script>alert('Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!');</script>";
+
+}
+
 
 login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
@@ -12,10 +18,6 @@ if($_SESSION["loggedin"] == false){
 if(empty($_SESSION["users"])){
     $_SESSION["users"]  = $users;
 }
-    
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,39 +44,29 @@ if(empty($_SESSION["users"])){
 <div class="header">
 
     <div class="logo"><a href="index.php" id="logga">Love Boxes</a></div>
-    <div class="dropdown">
-    <button class="dropbtn">Favorites</button>
-    <div class="dropdown-content">
-        <a href="index.php">Start</a>
-        <a href="omoss.php">Om oss</a>    
-        <a href="produkter.php">Produkter</a>
-        <a href="recept.php">Recept</a>
-        <a href="#">Kontakta oss</a>
-    </div>
+        <!-- <div class="dropdown">
+            <button class="dropbtn">Favorites</button>
+            <div class="dropdown-content">
+                <a href="index.php">Start</a>
+                <a href="omoss.php">Om oss</a>    
+                <a href="produkter.php">Produkter</a>
+                <a href="recept.php">Recept</a>
+                <a href="#">Kontakta oss</a>
+            </div>
+        </div> -->
     </div>
     <img src="pics/blomma.jpg" class="headPic">
     <img src="pics/blomma.jpg" class="headPic">
     <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-<<<<<<< HEAD
-        <a href="index.php">Start</a>
-        <a href="omoss.php">Om oss</a>    
-        <a href="produkter.php">Produkter</a>
-        <a href="recept.php">Recept</a>
-        <a href="#">Kontakta oss</a>
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.php">Start</a>
+            <a href="omoss.php">Om oss</a>    
+            <a href="produkter.php">Produkter</a>
+            <a href="recept.php">Recept</a>
+            <a href="kontakt.php">Kontakta oss</a>
+            <a href ="admin.php"> Admin </a>
+            <a href="clearsession.php">Logga ut</a>
+        </div>
     </div>
-=======
-    <a href="index.php">Start</a>
-    <a href="omoss.php">Om oss</a>    
-      <a href="produkter.php">Produkter</a>
-      <a href="recept.php">Recept</a>
-      <a href="kontakt.php">Kontakta oss</a>
-      <a href ="admin.php"> Admin </a>
->>>>>>> 3a094f98e1541b204c21e28f8bff947b68050186
-    </div>
-  
-  
-    <div><a href="clearsession.php"><button>Logga ut</button></a></div>
-
 </div>

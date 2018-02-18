@@ -7,16 +7,21 @@ function signuplogin($users, $username, $password, $fullname ){
     if(!empty($username) ){
 
         #Om användaren kommer från /signup.php:
-        if($_SESSION["signupurllastname"] == URLPREFIX."signup.php" ){
+        if($_SESSION["kommerfrånsignup"] == URLPREFIX."signup.php" ){
 
             #($username och $password inte är tom:
             if(!empty($username and !empty($password) )){
                 
-                $_POST["grattisNyKund"] = "Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!";
-
+                
                 $tillfälligarray = array("username" => $username ,"password" =>  $password, "fullname" => $fullname, "regIP" => $_SERVER['REMOTE_ADDR']) ;
                 array_push($users,$tillfälligarray);
-                      $_SESSION["users"] = $users;
+                $_SESSION["users"] = $users;
+                
+                // $_POST["grattisNyKund"] = "Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!";
+                
+                $_SESSION["loggedin"] = true; 
+                header("location:index.php");
+    
             }
             else{
                 echo "Du glömde fylla i username och/eller lösenord!";   
