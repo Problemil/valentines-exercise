@@ -3,12 +3,9 @@ session_start();
 require "data.php";
 require "variabels.php";
 require "functions/functions.php";
-if($_SESSION["kommerfrånsignup"] == URLPREFIX."signup.php" ){
 
-    echo "<script>alert('Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!');</script>";
-
-}
-
+welcomeNewregmember();
+unset($_SESSION["newreguser"]);
 
 login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
@@ -42,33 +39,21 @@ if(empty($_SESSION["users"])){
 <body>
 
 <div class="header">
-
-    <div class="logo"><a href="index.php" id="logga">Love Boxes</a></div>
-        <!-- <div class="dropdown">
-            <button class="dropbtn">Favorites</button>
-            <div class="dropdown-content">
-                <a href="index.php">Start</a>
-                <a href="omoss.php">Om oss</a>    
-                <a href="produkter.php">Produkter</a>
-                <a href="recept.php">Recept</a>
-                <a href="#">Kontakta oss</a>
-            </div>
-        </div> -->
-    
+    <div class="logo">
+        <a href="index.php" id="logga">Love Boxes</a>
+    </div>
     <img src="pics/blomma.jpg" class="headPic">
     <img src="pics/blomma.jpg" class="headPic">
     <div class="dropdown">
-    <button class="dropbtn">Menu</button>
-    <div class="dropdown-content">
-        <a href="index.php">Start</a>
-        <a href="omoss.php">Om oss</a>    
-        <a href="produkter.php">Produkter</a>
-        <a href="recept.php">Recept</a>
-        <a href="#">Kontakta oss</a>
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.php">Start</a>
+            <a href="omoss.php">Om oss</a>    
+            <a href="produkter.php">Produkter</a>
+            <a href="recept.php">Recept</a>
+            <a href="kontakt.php">Kontakta oss</a>
+            <a href="admin.php">Admin</a>
+            <a href="clearsession.php">Logga ut</a>
+        </div>
     </div>
-    </div>
-  
-  
-    <div><a href="clearsession.php"><button>Logga ut</button></a></div>
-
 </div>

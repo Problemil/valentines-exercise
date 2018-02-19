@@ -18,7 +18,7 @@ function signuplogin($users, $username, $password, $fullname ){
                 $_SESSION["users"] = $users;
                 
                 // $_POST["grattisNyKund"] = "Välkommen ".$username."!😄 <br/>Du är nu registrerad som ny kund hos oss!";
-                
+                $_SESSION["newreguser"] = $username;
                 $_SESSION["loggedin"] = true; 
                 header("location:index.php");
     
@@ -70,4 +70,10 @@ function echoRandomQuote() {
         case 5:
         echo  "Life is like a box of chocolates. You never know what you’re going to get. ~ Forrest Gump  -  ";
     }
+}
+Function welcomeNewregmember(){
+    if(!empty($_SESSION["newreguser"])){
+        echo "<script>alert('Välkommen ".$_SESSION["newreguser"]."!😄 Du är nu registrerad som ny kund hos oss!')</script>";
+    }
+
 }
