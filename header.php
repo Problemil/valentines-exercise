@@ -9,11 +9,11 @@ unset($_SESSION["newreguser"]);
 
 login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
-if($_SESSION["loggedin"] == false){
-    header("location:login.php");
-}
 if(empty($_SESSION["users"])){
     $_SESSION["users"]  = $users;
+}
+if($_SESSION["loggedin"] == false){
+    header("location:login.php");
 }
 ?>
 <!DOCTYPE html>

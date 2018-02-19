@@ -1,5 +1,8 @@
 <?php 
     session_start();
+    if(empty($_SESSION["users"])){
+        $_SESSION["users"]  = $users;
+    }
 ?>
 
 <head>
@@ -7,6 +10,9 @@
 </head>
 
 <body id="loginBody">
+    <div id="div för visning av session">
+
+    
     <div id="loginDiv">
     <h1>
     Please login to view the page 🤩
@@ -34,6 +40,19 @@
     <div id="notAMemberDiv">
         <h3>Not a member?</h3>
         <a href="signup.php"><button id="loginButton">SIGN UP HERE</button></a>
+    </div>
+    <h2> 
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+        vanlig: <?php print_r($_SESSION["loggedin"]); ?>
+        <br/>
+        admin: <?php print_r($_SESSION["adminloggedin"]); ?>
+        <br/>
+        users: <?php print_r($_SESSION["users"]); ?> 
+    </h2>
     </div>
 </body>
 
