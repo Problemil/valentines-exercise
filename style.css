@@ -57,7 +57,7 @@ a{
 .footer{
     width:100%;
     background-color: black;
-    height:60px;
+    height:70px;
     color:red;
     display: flex;
     align-items: center;
@@ -126,7 +126,7 @@ a{
 }
 .name{
     text-align:left;
-    width:80px;
+    width:120px;
     margin-bottom:20px;
 }
 input{

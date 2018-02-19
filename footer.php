@@ -1,13 +1,12 @@
 
 <div class="footer">
-
-   <?php
-   
-    echoRandomQuote();
-    
-    ?> 
     <div style="text-align:center">
-    &copy Loveboxes island, INC
+        <p style="color:white; margin:0px;">
+            <?php echoRandomQuote();?>
+        </p>
+        <p style="margin:0px;">
+            &copy Loveboxes island, INC
+        </p>
     </div>
 </div>
 

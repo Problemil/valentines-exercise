@@ -9,7 +9,7 @@
 <body id="loginBody">
     <div id="loginDiv">
     <h1>
-    Login for to view the admin page! 
+    Logga in för att få tillgång till admin sidan! 
     </h1>
         <form action='results.php' METHOD='POST'>      
             <div class='nameandinput'>
@@ -28,7 +28,10 @@
                     <input type='password' name='adminpassword'>
                 </div>
             </div>
-            <input id="submit" type="submit" value="PRESS ME">
+            <input id="submit" type="submit" value="Logga in">
+            <a href="index.php">
+                <button type="button">Tillbaka</button>
+            </a>
         </form>
     </div>
 </body>

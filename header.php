@@ -1,20 +1,20 @@
 <?php 
-session_start();
-require "data.php";
-require "variabels.php";
-require "functions/functions.php";
+    session_start();
+    require "data.php";
+    require "variabels.php";
+    require "functions/functions.php";
 
-welcomeNewregmember();
-unset($_SESSION["newreguser"]);
+    welcomeNewregmember();
+    unset($_SESSION["newreguser"]);
 
-login($_SESSION["users"], $_POST["username"], $_POST["password"]);
+    login($_SESSION["users"], $_POST["username"], $_POST["password"]);
 
-if(empty($_SESSION["users"])){
-    $_SESSION["users"]  = $users;
-}
-if($_SESSION["loggedin"] == false){
-    header("location:login.php");
-}
+    if(empty($_SESSION["users"])){
+        $_SESSION["users"]  = $users;
+    }
+    if($_SESSION["loggedin"] == false){
+        header("location:login.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,18 +26,15 @@ if($_SESSION["loggedin"] == false){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <title>
         <?php 
-        echo SITENAME;
-        if(isset($pagetitle)){
-            echo " - ".$pagetitle;
+            echo SITENAME;
+            if(isset($pagetitle)){
+                echo " - ".$pagetitle;
 
-        }
+            }
         ?>
     </title>
 </head>
-
-
 <body>
-
 <div class="header">
     <div class="logo">
         <a href="index.php" id="logga">Love Boxes</a>
