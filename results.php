@@ -3,7 +3,7 @@
     require "functions/functions.php";
     require "data.php";
 
-    // adminLogin($_POST["adminusername"],$_POST["adminpassword"]);
+    // adminLogin($_POST["adminusername"], $_POST["adminpassword"]);
     
     if(isset($_POST["adminusername"])){
         for ($i = 0; $i < count($users); $i++){
@@ -11,7 +11,6 @@
                 $_SESSION["adminloggedin"] = true;        
             }
         }
-    
     }
     if(!isset($_SESSION["adminloggedin"])){
         header("location:admin.php");

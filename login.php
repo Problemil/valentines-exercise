@@ -10,6 +10,7 @@
 </head>
 
 <body id="loginBody">
+syns detta: <?php print_r($_POST["adminusername"]); ?> 
     <div id="loginDiv">
         <h1>
         Logga in för att få tillgång till sidan 🤩

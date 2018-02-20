@@ -50,19 +50,19 @@
         }
     }
 
-    function adminLogin($username,$password){
-        if(!isset($_SESSION["adminloggedin"])){
-            header("location:admin.php");
-        }
-
-        if(isset($username)){
-            for ($i = 0; $i < count($users); $i++){
-                if($username == $_SESSION["users"][$i]["username"] and $password == $_SESSION["users"][$i]["password"]){
-                    $_SESSION["adminloggedin"] = true;        
-                }
-            }
-        }
-    }
+    // function adminLogin($username, $password){
+        
+    //     if(isset($username)){
+    //         for ($i = 0; $i < count($users); $i++){
+    //             if($username == $_SESSION["users"][$i]["username"] and $password == $_SESSION["users"][$i]["password"]){
+    //                 $_SESSION["adminloggedin"] = true;        
+    //             }
+    //         }
+    //     }
+    //     if(!isset($_SESSION["adminloggedin"])){
+    //         header("location:admin.php");
+    //     }
+    // }
 
 
 
